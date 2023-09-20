@@ -1,0 +1,78 @@
+.contato__form,
+.contato__info{
+  width: 50%;
+  padding: 0 15px;
+}
+.contato__form .grupo__input{
+  width: 100%;
+  margin-bottom: 30px;
+}
+.contato__form .input__controle::placeholder{
+  color: var(--azul-escuro);
+  opacity: 0.8;
+  font-weight: 300;
+}
+.contato__form .input__controle {
+  display: block;
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  background-color: var(--white-alpha-25);
+  padding: 0 20px;
+  color: var(--azul-escuro);
+  border: 1px solid transparent;
+  transition: border-color 0.3s ease;
+}
+.contato__form .input__controle:focus {
+  border-color: var(--white-alpha-40);
+
+}
+.contato__form textarea.input__controle{
+  height: 120px;
+  resize: none;
+  padding-top: 15px;
+}
+.contato__info__item{
+  margin: 0 0 30px;
+  padding: 0 0 0 20px;
+}
+.contato__info__item h3{
+  font-size: 20px;
+  text-transform: capitalize;
+  margin: 0 0 5px;
+}
+.contato__info__item .social__links a{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  background-color: var(--white-alpha-25);
+  border: 1px solid var(--white-alpha-40);
+  color: var(--main-color);
+  border-radius: 50%;
+  margin: 6px 4px 0 0;
+  transition: 0.3s ease;
+}
+.contato__info__item .social__links a:hover{
+  color: var(--branco);
+  background-color: var(--main-color);
+}
+
+@media( max-width: 767px ){
+  .contato__form,
+  .contato__info{
+    width: 100%;
+  }
+  .contato__info{
+    order: -1;
+    margin-bottom: 15px;
+  }
+  .contato__info__item{
+    padding: 0;
+  }
+}

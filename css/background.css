@@ -1,0 +1,115 @@
+.bg__circulos{
+  position: fixed;
+  top: 0;
+  height: 100%;
+  max-width: 1200px;
+  width: calc(100% - 30px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+.bg__circulos div{
+  position: absolute;
+  border-radius: 50%;
+}
+.bg__circulos .circulo__1{
+  height: 60px;
+  width: 60px;
+  background-color: var(--azul);
+  left: 5%;
+  top: 10%;
+  opacity: 0.3;
+  animation: zoomInOut 8s linear infinite;
+}
+.bg__circulos .circulo__2{
+  height: 80px;
+  width: 80px;
+  background-color: var(--main-color);
+  left: 30%;
+  top: 50%;
+  opacity: 0.4;
+  animation: bouceTop 5s ease-in-out infinite;
+}
+.bg__circulos .circulo__3{
+  height: 120px;
+  width: 120px;
+  background-color: var(--branco);
+  right: -60px;
+  top: 40%;
+  opacity: 0.6;
+}
+.bg__circulos .circulo__4{
+  height: 50px;
+  width: 50px;
+  background-color: var(--laranja);
+  left: -30px;
+  top: 80%;
+  opacity: 0.6;
+}
+
+/* loader */
+.page__loader{
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 999;
+  background-color: var(--white-alpha-25);
+  backdrop-filter: var(--backdrop-filter-blur);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.6s ease;
+}
+.page__loader.fade-out{
+  opacity: 0;
+}
+.page__loader div{
+  border: 2px solid transparent;
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.6;
+  border-top-color: transparent !important;
+  border-bottom-color: transparent !important;
+  animation: spin 1s linear infinite;
+}
+.page__loader div:nth-child(1){
+  height: 60px;
+  width: 60px;
+  border-color: var(--main-color);
+}
+.page__loader div:nth-child(2){
+  height: 45px;
+  width: 45px;
+  border-color: var(--azul);
+  animation-duration: 1.2s;
+}
+.page__loader div:nth-child(3){
+  height: 30px;
+  width: 30px;
+  border-color: var(--laranja);
+  animation-duration: 1s;
+}
+
+
+@keyframes zoomInOut {
+  0%,100% {
+    transform: scale(0.5);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+@keyframes bouceTop {
+  0%,100% {
+    transform: translateY(-50px)
+  }
+  50% {
+    transform: translateY(0px)
+  }
+}
+@keyframes spin {
+  0%{transform: rotate(0deg);}
+  100%{transform: rotate(360deg);}
+  
+}

@@ -1,0 +1,134 @@
+/* fonte Poppins google fonts */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+/* variaveis globais */
+:root{
+  --main-color:#e02f6b ;
+  --azul-claro:#aef1ee ;
+  --azul:#0000ff ;
+  --azul-escuro:#18293c ;
+  --laranja: #ffa500;
+  --amarelo: #cddc39;
+  --rosa: #efa2ba;
+  --branco: #fff ;
+  --white-alpha-40 :rgba(255,255,255,0.40) ;
+  --white-alpha-25 :rgba(255,255,255,0.25) ;
+  --backdrop-filter-blur :blur(5px) ;
+
+}
+
+/* reset */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+/* estilos padrao da pagina */
+::before,
+::after {
+  box-sizing: border-box;
+}
+a{text-decoration: none; }
+h1,h2{font-weight: 600;}
+h3,h4,h5,h6 {font-weight: 500;}
+img{
+  max-width: 100%;
+  vertical-align: middle;/* alinhar verticalmente */
+}
+ul{
+  list-style: none;
+}
+body.hide__scrolling{
+  overflow-y: hidden;
+}
+body{
+  min-height: 100vh;/* toda a tela */
+  background-image: linear-gradient(to bottom right,var(--rosa), var(--azul-claro));
+  background-attachment: fixed;/* mantem o fundo parado quando ha um scroll */
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  color: var(--azul-escuro);
+  line-height: 1.5;
+  overflow-x: hidden;
+  -webkit-top-highlight-color: transparent;
+  padding: 35px 15px;
+}
+body::before{
+  content: "";
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--amarelo);
+  z-index: -1;/* para que este elemento fique atras de tudo */
+  opacity: 0.12;
+}
+section{
+  background-color: var(--white-alpha-25);
+  border: 1px solid var(--white-alpha-40);
+  min-height: calc(100vh - 70px);
+  border-radius: 30px;
+  backdrop-filter: var(--backdrop-filter-blur);
+  display: none;
+}
+section.active{
+  display: block;
+  animation: fadeIn 0.3s ease-in-out forwards;
+}
+section.fade-out{  animation: fadeOut 0.3s ease-in-out forwards; }
+button{
+  font-family: inherit; 
+  user-select: none;/* esta propriedade nao permite que o texto seja selecionado pelo usuario */
+}
+
+
+/* estilo da barra de scroll */
+::-webkit-scrollbar{
+  width: 5px;
+}
+::-webkit-scrollbar-track{
+  background-color: var(--branco);
+}
+::-webkit-scrollbar-thumb{
+  background-color: var(--main-color);
+}
+
+
+.main {
+  max-width: 1200px;
+  margin: auto;
+  transition: all 0.3 ease-in-out;
+  position: relative;
+}
+.main.fade__out{
+  opacity: 0;
+}
+/* row são as colunas */
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+.align__item__center {
+  align-items: center;
+}
+.sec__padding{
+  padding: 80px 0;
+}
+.flex__end{
+  justify-content: flex-end;
+}
+.hidden{
+  display: none !important;
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+

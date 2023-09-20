@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/global.css">
+  <link rel="stylesheet" href="./css/font-awesome.css">
+  <link rel="stylesheet" href="./css/background.css">
+  <link rel="stylesheet" href="./css/sobreposicao.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/home.css">
+  <link rel="stylesheet" href="./css/sobre.css">
+  <link rel="stylesheet" href="./css/portfolio.css">
+  <link rel="stylesheet" href="./css/protfolio-popup.css">
+  <link rel="stylesheet" href="./css/contato.css">
+  <title>Portfolio</title>
+</head>
+<body>
+  <!-- Loader  -->
+  <div class="page__loader">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <!-- Plano de fundo circulos -->
+  <div class="bg__circulos">
+    <div class="circulo__1"></div>
+    <div class="circulo__2"></div>
+    <div class="circulo__3"></div>
+    <div class="circulo__4"></div>
+  </div>
+<!-- Sobreposição -->
+<div class="overlay">
+</div>
+  <div class="main hidden">
+    <div class="header">
+      <div class="container">
+        <div class="row flex__end">
+          <button type="button" class="nav__toggler ">
+            <span></span>
+          </button>
+          <nav class="nav">
+            <div class="nav__inner">
+              <ul>
+                <li><a href="#home" class="nav__item link__item">home</a></li>
+                <li><a href="#sobre"class="nav__item link__item">sobre</a></li>
+                <li><a href="#portfolio"class="nav__item link__item">portfolio</a></li>
+                <li><a href="#contato"class="nav__item link__item">contato</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!-- sessao home -->
+    <section class="home__section align__item__center " id='home'>
+      <div class="container__home">
+        <div class="row align__item__center">
+          <div class="home__text">
+            <p>Olá meu Nome é</p>
+            <h1>Janet Vazquez</h1>
+            <h2>Tradutora e Design</h2>
+            <a href="#sobre"class='btn link__item'>Mas Sobre Mim</a>
+            <a href="#portfolio"class='btn link__item'>Portfolio</a>
+          </div>
+          <div class="home__img">
+            <div class="img__box">
+              <img src="./img/janet-profile.png" alt="imagem de janet vazquez sorrindo">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- sessao sobre -->
+    <section class="sobre__section sec__padding" id="sobre">
+      <div class="container">
+        <div class="row">
+          <div class="section__titulo">
+            <h2>Sobre Mim</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="sobre__img">
+            <div class="img__box">
+              <img src="./img/janet-sobre.jpg" alt="imagem de janet vazquez sorrindo">
+            </div>
+          </div>
+          <div class="sobre__text">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla molestias facilis debitis qui mollitia labore quo sequi at reiciendis, minus pariatur quis, laboriosam iste expedita ea fugit unde molestiae quia eaque culpa optio earum autem. Esse, officia dolore ad vero voluptas molestias ab quod earum dolorum, magnam dolores obcaecati doloribus.</p>
+            <h3>Habilidades</h3>
+            <div class="skills">
+              <div class="skill__item">Tradução</div>
+              <div class="skill__item">Figma</div>
+              <div class="skill__item">Design</div>
+              <div class="skill__item">Canva</div>
+              <div class="skill__item">UX/UI</div>
+              <div class="skill__item">Divulgação</div>
+              <div class="skill__item">Social Midia</div>
+            </div>
+            <div class="sobre__tabelas">
+              <button type="button" class="tab__item active" data-target="#educacao">Educação</button>
+              <button type="button" class="tab__item" data-target="#experiencia">Experiencia</button>
+          </div>
+          <!-- Educaçao -->
+          <div class="tab__conteudo active"  id="educacao">
+            <div class="linhatempo">
+              <div class="linhatempo__item">
+                <span class="date">01/2023 - 03/2023</span>
+                <h4>Design UX/UI - <span>Google-Coursera</span></h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus aliquam sapiente voluptates. Iusto, velit voluptatibus!</p>
+              </div>
+              <div class="linhatempo__item">
+                <span class="date">04/2023 - 06/2023</span>
+                <h4>E-commerce - <span>Google-Coursera</span></h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus aliquam sapiente voluptates. Iusto, velit voluptatibus!</p>
+              </div>
+              <div class="linhatempo__item">
+                <span class="date">07/2023 - 09/2023</span>
+                <h4>Gerenciamento de Projetos - <span>Google-Coursera</span></h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus aliquam sapiente voluptates. Iusto, velit voluptatibus!</p>
+              </div>
+              <div class="linhatempo__item">
+                <span class="date">07/2023 - 09/2023</span>
+                <h4>Gerenciamento de Projetos - <span>Google-Coursera</span></h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus aliquam sapiente voluptates. Iusto, velit voluptatibus!</p>
+              </div>
+            </div>
+          </div>
+          <!-- Experiencia -->
+          <div class="tab__conteudo" id="experiencia">
+            <div class="linhatempo">
+              <div class="linhatempo__item">
+                <span class="date">01/2021 - 03/2022</span>
+                <h4>Secretaria Executiva - <span>Hotel Hipk</span></h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus aliquam sapiente voluptates. Iusto, velit voluptatibus!</p>
+              </div>
+              <div class="linhatempo__item">
+                <span class="date">01/2021 - 03/2022</span>
+                <h4>Sub-Gerente - <span>Bolos da Tatii</span></h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus aliquam sapiente voluptates. Iusto, velit voluptatibus!</p>
+              </div>
+              <div class="linhatempo__item">
+                <span class="date">01/2021 - 03/2022</span>
+                <h4>Web Design - <span>Autonomo</span></h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus aliquam sapiente voluptates. Iusto, velit voluptatibus!</p>
+              </div>
+              <div class="linhatempo__item">
+                <span class="date">01/2021 - 03/2022</span>
+                <h4>Tradutora - <span>Freelancer</span></h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus aliquam sapiente voluptates. Iusto, velit voluptatibus!</p>
+              </div>
+          </div>
+        </div>
+        <a href="./curriculo/janet sem foto.pdf" target="_blank" class="btn">Download CV</a>
+        <a href="#contato" class="btn link__item">Contato</a>
+      </div>
+    </section>
+    <!-- sessao portfolio -->
+    <section class="portfolio__section sec__padding" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="section__titulo">
+            <h2>Trabalhos Recentes</h2>
+          </div>
+        </div>
+        <div class="row">
+          <!-- itens portfolio -->
+          <div class="portfolio__item">
+            <div class="protfolio__item__thumbnail">
+              <img src="./img/1.jpg" alt="trabalho 1">
+            </div>
+            <h3 class="portfolio__item__title">Design para Site de Cursos</h3>
+            <button type='button' class="btn view-project-btn">Ver Projeto</button>
+            <div class="portfolio__item__detalhes">
+              <div class="descricao">
+                <p>(site cursos)Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, animi molestias. Quasi deleniti quam quisquam qui dignissimos sunt voluptatem vero totam, quas, maiores dolores cupiditate aspernatur ullam eveniet nostrum iste.</p>
+              </div>
+              <div class="info__geral">
+                <ul>
+                  <li>Criado - <span>04/Dez/2021</span></li>
+                  <li>Tecnologia Usada - <span>Figma, Adobe XD</span></li>
+                  <li>Tipo - <span>Design Freelancer</span></li>
+                  <li>Veja Online - <span><a href="#" target="_blank">www.janetvazquez.com.br</a></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio__item">
+            <div class="protfolio__item__thumbnail">
+              <img src="./img/2.jpg" alt="trabalho 1">
+            </div>
+            <h3 class="portfolio__item__title">Design para Portfolio</h3>
+            <button type='button' class="btn view-project-btn">Ver Projeto</button>
+            <div class="portfolio__item__detalhes">
+              <div class="descricao">
+                <p>(portfolio vermelho)Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, animi molestias. Quasi deleniti quam quisquam qui dignissimos sunt voluptatem vero totam, quas, maiores dolores cupiditate aspernatur ullam eveniet nostrum iste.</p>
+              </div>
+              <div class="info__geral">
+                <ul>
+                  <li>Criado - <span>04/Dez/2023</span></li>
+                  <li>Tecnologia Usada - <span>Figma, Adobe XD</span></li>
+                  <li>Tipo - <span>Design Freelancer</span></li>
+                  <li>Veja Online - <span><a href="#" target="_blank">www.janetvazquez.com.br</a></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio__item">
+            <div class="protfolio__item__thumbnail">
+              <img src="./img/3.jpg" alt="trabalho 1">
+            </div>
+            <h3 class="portfolio__item__title">Design para Apps</h3>
+            <button type='button' class="btn view-project-btn">Ver Projeto</button>
+            <div class="portfolio__item__detalhes">
+              <div class="descricao">
+                <p>(apps )Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, animi molestias. Quasi deleniti quam quisquam qui dignissimos sunt voluptatem vero totam, quas, maiores dolores cupiditate aspernatur ullam eveniet nostrum iste.</p>
+              </div>
+              <div class="info__geral">
+                <ul>
+                  <li>Criado - <span>04/Dez/2024</span></li>
+                  <li>Tecnologia Usada - <span>Figma, Adobe XD</span></li>
+                  <li>Tipo - <span>Design Freelancer</span></li>
+                  <li>Veja Online - <span><a href="#" target="_blank">www.janetvazquez.com.br</a></span></li>
+                </ul>
+              </div>
+            </div>
+          </div> 
+          <div class="portfolio__item">
+            <div class="protfolio__item__thumbnail">
+              <img src="./img/4.jpg" alt="trabalho 1">
+            </div>
+            <h3 class="portfolio__item__title">Design para Restaurante</h3>
+            <button type='button' class="btn view-project-btn">Ver Projeto</button>
+            <div class="portfolio__item__detalhes">
+              <div class="descricao">
+                <p>(Restaurante)Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, animi molestias. Quasi deleniti quam quisquam qui dignissimos sunt voluptatem vero totam, quas, maiores dolores cupiditate aspernatur ullam eveniet nostrum iste.</p>
+              </div>
+              <div class="info__geral">
+                <ul>
+                  <li>Criado - <span>04/Dez/2025</span></li>
+                  <li>Tecnologia Usada - <span>Figma, Adobe XD</span></li>
+                  <li>Tipo - <span>Design Freelancer</span></li>
+                  <li>Veja Online - <span><a href="#" target="_blank">www.janetvazquez.com.br</a></span></li>
+                </ul>
+              </div>
+            </div>
+          </div> 
+          <div class="portfolio__item">
+            <div class="protfolio__item__thumbnail">
+              <img src="./img/5.jpg" alt="trabalho 1">
+            </div>
+            <h3 class="portfolio__item__title">Design para Portfolio</h3>
+            <button type='button' class="btn view-project-btn">Ver Projeto</button>
+            <div class="portfolio__item__detalhes">
+              <div class="descricao">
+                <p>(portfolio branco)Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, animi molestias. Quasi deleniti quam quisquam qui dignissimos sunt voluptatem vero totam, quas, maiores dolores cupiditate aspernatur ullam eveniet nostrum iste.</p>
+              </div>
+              <div class="info__geral">
+                <ul>
+                  <li>Criado - <span>04/Dez/2026</span></li>
+                  <li>Tecnologia Usada - <span>Figma, Adobe XD</span></li>
+                  <li>Tipo - <span>Design Freelancer</span></li>
+                  <li>Veja Online - <span><a href="#" target="_blank">www.janetvazquez.com.br</a></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio__item">
+            <div class="protfolio__item__thumbnail">
+              <img src="./img/6.jpg" alt="trabalho 1">
+            </div>
+            <h3 class="portfolio__item__title">Design para Landing-page</h3>
+            <button type='button' class="btn view-project-btn">Ver Projeto</button>
+            <div class="portfolio__item__detalhes">
+              <div class="descricao">
+                <p>(landing)Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, animi molestias. Quasi deleniti quam quisquam qui dignissimos sunt voluptatem vero totam, quas, maiores dolores cupiditate aspernatur ullam eveniet nostrum iste.</p>
+              </div>
+              <div class="info__geral">
+                <ul>
+                  <li>Criado - <span>04/Dez/2027</span></li>
+                  <li>Tecnologia Usada - <span>Figma, Adobe XD</span></li>
+                  <li>Tipo - <span>Design Freelancer</span></li>
+                  <li>Veja Online - <span><a href="#" target="_blank">www.janetvazquez.com.br</a></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- sessao Contato -->
+    <section class="contato__section sec__padding" id="contato">
+      <div class="container">
+        <div class="row">
+          <div class="section__titulo">
+            <h2>Contate-me</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="contato__form ">
+            <form>
+              <div class="row">
+                <article class="grupo__input">
+                  <input type="text" placeholder='Nome' class='input__controle' required/>
+                </article>
+                <article class="grupo__input">
+                  <input type="email" placeholder='Email' class='input__controle' required/>
+                </article>
+                <article class="grupo__input">
+                  <input type="text" placeholder='Assunto' class='input__controle' required/>
+                </article>
+                <article class="grupo__input">
+                  <textarea placeholder='Mensagem' class='input__controle' required></textarea>
+                </article>
+                <div class="submit__btn">
+                  <button type="submit" class="btn">Envia Mensagem</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="contato__info">
+            <div class="contato__info__item">
+              <h3>Email</h3>
+              <p>emaildajanet@gmail.com</p>
+            </div>
+            <div class="contato__info__item">
+              <h3>Telefone</h3>
+              <p>(13) 9 0000-0000</p>
+            </div>
+            <div class="contato__info__item">
+              <h3>Siga-me</h3>
+              <div class="social__links">
+                <a href="#" target="_blank"><i class="fab fa-facebook-f" ></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter" ></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram" ></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin" ></i></a>
+                <a href="#" target="_blank"><i class="fab fa-dribbble" ></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+    <!-- Portfolio Detalhes Popup -->
+    <div class="portfolio__popup">
+      <div class="pp__inner">
+        <div class="pp__conteudo">
+          <div class="pp__header">
+            <button type="button" class="btn pp__close"><i class="fas fa-times"></i></button>
+            <div class="pp__thumbnail">
+              <img src="./img/3.jpg" alt="texto aulternativo">
+            </div>
+            <h3></h3>
+          </div>
+          <div class="pp__body">
+            <div class="descricao">
+          </div>
+        </div>
+      </div>
+    </div>
+  <script src="./js/index.js"></script>
+</body>
+</html>
