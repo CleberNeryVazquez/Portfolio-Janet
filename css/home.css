@@ -33,6 +33,7 @@
   z-index: -1;
   transition: height 0.3s ease;
 }
+
 .btn:hover::before {height: 100%;}
 .btn:hover{color: var(--branco);}
 .home__section{ padding: 120px 0;}
